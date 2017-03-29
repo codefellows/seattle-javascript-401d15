@@ -20,15 +20,15 @@ Javascript is a single threaded language. Which means that it can only do a sing
  * when a javascript function makes a call to node APIs it passes the node API a callback
    * the node api does it thing, then passes its results into the callback, and enqueues the callback onto the callback queue
 * call stack
- * the call stack keeps track of each function that is currently running in javascript
- * each time a function gets invoked it gets pushed onto the call stack
- * each time a function returns it gets popped from the call stack
- * at any given point in time javascript is only running the function on top of the call stack
+  * the call stack keeps track of each function that is currently running in javascript
+  * each time a function gets invoked it gets pushed onto the call stack
+  * each time a function returns it gets popped from the call stack
+  * at any given point in time javascript is only running the function on top of the call stack
 * event loop
- * the event loop constantly checks if the stack is empty
- * when the stack is empty it dequeues any functions on the callback queue and pushes them onto the stack
+  * the event loop constantly checks if the stack is empty
+  * when the stack is empty it dequeues any functions on the callback queue and pushes them onto the stack
 * callback queue
- * the callback queue holds completion handling functions from passed node APIs
+  * the callback queue holds completion handling functions from passed node APIs
 
 #### Advanced JS & Asynchronous Programming in NodeJS
    * **Hoisting**
@@ -114,18 +114,18 @@ Javascript is a single threaded language. Which means that it can only do a sing
  * the callback should take the form `(Error) => {}`
 
 * Read File
- * `fs.readFile(filepath [, options], callback);`
- * the callback should take the form `(Error, Buffer) => {}`
+  * `fs.readFile(filepath [, options], callback);`
+  * the callback should take the form `(Error, Buffer) => {}`
 
 * Delete File
- * `fs.unlink(filepath, callback);`
- * the callback should take the form `(Error) => {}`
+  * `fs.unlink(filepath, callback);`
+  * the callback should take the form `(Error) => {}`
 
 * Other useful methods
- * `readdir` - reads the contents of a directory
- * `mkdir` - create a directory
- * `stat` - get information about a file/dir/link
- * `watch` - watch a file for changes
+  * `readdir` - reads the contents of a directory
+  * `mkdir` - create a directory
+  * `stat` - get information about a file/dir/link
+  * `watch` - watch a file for changes
 
 #### Asynchronous Testing with MochaJS
  * **Calling `done`**
