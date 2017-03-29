@@ -1,5 +1,5 @@
-401 JS -- class 03 Javascript Runtime and FS modules
-===
+![cf](http://i.imgur.com/7v5ASc8.png) 03: Parallel File Processing
+=====================================
 
 ## JS Runtime Resources
 * Watch [what the heck is the event loop anyway]
@@ -30,133 +30,46 @@ Javascript is a single threaded language. Which means that it can only do a sing
 * callback queue
  * the callback queue holds completion handling functions from passed node APIs
 
+#### Advanced JS & Asynchronous Programming in NodeJS
+   * **Hoisting**
+     * hoisting is JS default behavior of moving all declarations to the top of the current scope
+     * only declarations are hoisted, not the initialization
+       * declaring a variable is the actual creation of a variable, not the initialization
+         * initialization refers to when a variable is assigned a value
+     * hoisting example:
+       ```
+         adder(num1, num2);
+
+         var num1 = 10;
+         var num2 = 20;
+
+         function adder(a, b) {
+           return a + b;
+         };
+       ```
+     * in the above example, we are still able to call our `adder` function as the function declaration has been hoisted to the top of the current scope
+       * **note:** function declarations take precedence over variable declarations
+
+   * **The Event Loop**
+     * the NodeJS event loop operates under a single thread
+       * it supports concurrency through the use of events and callbacks
+     * NodeJS uses many threads "underneath the hood" (libuv)
+       * we are programming at a higher abstraction - removing the need to deal with lower level threading
+     * when NodeJS starts up, it processes the input script then begins processing the event loop
+     * phases of the event loop:
+       * **poll** - retrieve new I/O events
+       * **check** - `setImmediate` callbacks are invoked
+       * **close callbacks** - connections are closed (`socket.on('close', function(){...})`)
+       * **timers** - scheduled callbacks are invoked
+       * **I/O callbacks** - executes all callbacks (with the exception of close callbacks, callbacks scheduled by timers, and `setImmediate`)
+       * **idle/prepare** - NodeJS sits in an idle state - only used internally
+
 #### Node asynchronous callback pattern
 * node functions that have asynchronous input or output take a callback as there last argument
 * node functions that do not pass back data always have callback functions take the form `(err) => { }`
-``` javascript
-someNodeFunction('arg', 'arg', function(err) {
-  if(err) {
-    // handle Error
-  }
-})
-```
 * node functions that do pass back data always have callback functions take the form `(err, data) => { }`
-``` javascript
-someNodeFunction('arg', 'arg', function(err, data) {
-  if(err) {
-    // handle Error
-  }
-  // do something with the data
-})
-```
 
-#### fs module
-* the fs module is the node interface to the file system
-* the fs module has synchronous and asynchronous methods
-* if the method does not have sync in its name you can assume its synchronous
-* in this class we will **NEVER** use the synchronous methods
-* useful globals
-  * `__dirname` - the absolute path to the directory the current file is in
-  * `__filename` - the absolute path to the current file
-* Create File
- * `fs.writeFile(filepath, data [, options], callback);`
- * the callback should take the form `(Error) => {}`
-``` javascript
-fs.writeFile(`${__dirname}/hello-wolrd.txt`, 'hello from fs!', (err) => {
-  if(err) return console.error(err.message);
-  console.log('write success');
-});
-```
-* Read File
- * `fs.readFile(filepath [, options], callback);`
- * the callback should take the form `(Error, Buffer) => {}`
-
-``` javascript
-fs.readFile(`${__dirname}/hello-wolrd.txt`, (err, data) => {
-  if(err) return console.error(err.message);
-  console.log(data.toString());
-});
-```
-* Delete File
- * `fs.unlink(filepath, callback);`
- * the callback should take the form `(Error) => {}`
-``` javascript
-fs.unlink(`${__dirname}/hello-wolrd.txt`, (err) => {
-  if(err) return console.error(err.message);
-  console.log('delete success');
-});
-```
-* Other useful methods
- * `readdir` - reads the contents of a directory
- * `mkdir` - create a directory
- * `stat` - get information about a file/dir/link
- * `watch` - watch a file for changes
-
-<!--links -->
-[what the heck is the event loop anyway]: https://www.youtube.com/watch?v=8aGhZQkoFbQ
-[fs module docs]: https://nodejs.org/dist/latest-v6.x/docs/api/fs.html
-
-
-
-======
-# *MERGE THIS CONTENT*
-![cf](http://i.imgur.com/7v5ASc8.png) 03: Parallel File Processing
-=====================================
-
-## Advanced JS & Asynchronous Programming in NodeJS
-  * **Passing By Value vs. Passing By Reference**
-    * the concept of how we handle arguments passed into a function
-    * primitive data types (string, number, boolean) are passed by value
-      * this means that any changes made to the variable while inside the function are separate from anything that happens outside of the function
-    * objects are passed by reference
-      * any property of the object is available in the function
-      * when passing a method of an object as a parameter, the context of the function is lost (`this`)
-    * **demo:** passing by value vs passing by reference
-      * [val-vs-ref](/03-parallel_file_processing/demo/val-vs-ref)
-  * **Hoisting**
-    * hoisting is JS default behavior of moving all declarations to the top of the current scope
-    * only declarations are hoisted, not the initilization
-      * declaring a variable is the actual creation of a variable, not the initilization
-        * initilization refers to when a variable is assigned a value
-    * hoisting example:
-      ```
-        adder(num1, num2);
-
-        var num1 = 10;
-        var num2 = 20;
-
-        function adder(a, b) {
-          return a + b;
-        };
-      ```
-    * in the above example, we are still able to call our `adder` function as the function declaration has been hoisted to the top of the current scope
-      * **note:** function declarations take precedence over variable declarations
-  * **The Event Loop**
-    * the NodeJS event loop operates under a single thread
-      * it supports concurrency through the use of events and callbacks
-    * NodeJS uses many threads "underneath the hood" (libuv)
-      * we are programming at a higher abstraction - removing the need to deal with lower level threading
-    * when NodeJS starts up, it processes the input script then begins processing the event loop
-    * phases of the event loop:
-      * **poll** - retrieve new I/O events
-      * **check** - `setImmediate` callbacks are invoked
-      * **close callbacks** - connections are closed (`socket.on('close', function(){...})`)
-      * **timers** - scheduled callbacks are invoked
-      * **I/O callbacks** - executes all callbacks (with the exception of close callbacks, callbacks scheduled by timers, and `setImmediate`)
-      * **idle/prepare** - NodeJS sits in an idle state - only used internally
-
-  * **NodeJS Callback Pattern**
-    * a callback is simply a function that is passed as an argument to another function
-      * [callback-demo](/03-parallel_file_processing/demo/callback-demo)
-    * defining an "error first" callback
-      * `(err, result)`
-      * the first callback is reserved for an error
-      * the second callback is reserved for any successful response data
-    * no more `if/else` statements!
-      * checking for errors first - `if (err) throw err`
-      * success code goes below error handling
-
-## Working With Binary Data (Part 1)
+#### Working With Binary Data (Part 1)
   * **High Level Overview**
     * bits and bytes
       * a bit is the smallest unit of data in a computer
@@ -188,26 +101,41 @@ fs.unlink(`${__dirname}/hello-wolrd.txt`, (err) => {
       * hex
         * `buff.toString('hex')`
 
-## File System I/O
-  * the native NodeJS `fs` module gives us the ability to perform file system I/O operations
-  * we'll be using the asynchronous methods `fs.readFile` and `fs.writeFile`
-  * **`fs.readFile`**
-    * `readFile` creates a readable stream
-    * allows us to read the contents of a file
-    * **demo:** reading a file and logging its content
-      * [read-file-demo](/03-parallel_file_processing/demo/read-file-demo)
+#### fs module
+* the fs module is the node interface to the file system
+* the fs module has synchronous and asynchronous methods
+* if the method does not have sync in its name you can assume its synchronous
+* in this class we will **NEVER** use the synchronous methods
+* useful globals
+  * `__dirname` - the absolute path to the directory the current file is in
+  * `__filename` - the absolute path to the current file
+* Create File
+ * `fs.writeFile(filepath, data [, options], callback);`
+ * the callback should take the form `(Error) => {}`
 
-  * **`fs.writeFile`**
-    * `writeFile` creates a writable stream
-    * allows us to write content to a file
-    * **demo:** reading a file and writing its content to a new file
-      * [write-file-demo](/03-parallel_file_processing/demo/write-file-demo)
+* Read File
+ * `fs.readFile(filepath [, options], callback);`
+ * the callback should take the form `(Error, Buffer) => {}`
 
-## Asynchronous Testing with MochaJS
-  * **Calling `done`**
-    * MochaJS gives us 2 sec to call `done` before a timeout error occurs
-      * be sure to call `done` in the appropriate location (usually, this in your internal logic)
-      * calling `done` in the wrong block will likely cause a false positive test result
+* Delete File
+ * `fs.unlink(filepath, callback);`
+ * the callback should take the form `(Error) => {}`
 
-  * **demo:** testing file system I/O
-      * [read-file-tests](/03-parallel_file_processing/demo/read-file-tests)
+* Other useful methods
+ * `readdir` - reads the contents of a directory
+ * `mkdir` - create a directory
+ * `stat` - get information about a file/dir/link
+ * `watch` - watch a file for changes
+
+#### Asynchronous Testing with MochaJS
+ * **Calling `done`**
+   * MochaJS gives us 2 sec to call `done` before a timeout error occurs
+     * be sure to call `done` in the appropriate location (usually, this in your internal logic)
+     * calling `done` in the wrong block will likely cause a false positive test result
+
+ * **demo:** testing file system I/O
+
+
+<!--links -->
+[what the heck is the event loop anyway]: https://www.youtube.com/watch?v=8aGhZQkoFbQ
+[fs module docs]: https://nodejs.org/dist/latest-v6.x/docs/api/fs.html

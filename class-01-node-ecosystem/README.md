@@ -24,7 +24,6 @@
   * **Basics of Working in NodeJS**
     * `'use strict'` at the top of every file
     * **demo:**  simple file creation and execution
-      * [hello-world](/01-modular_patterns_and_testing/demo/hello-world)
 
 ## Modular Patterns in NodeJS
   * **What is `require`?**
@@ -40,9 +39,7 @@
       * relative: relative to where you currently are in the file system
       * absolute: full file path
     * **demo:** hello world demo, modularized
-      * [hello-world-modularized](/01-modular_patterns_and_testing/demo/hello-world-modularized)
     * **demo:** hello world demo, modularized, and with multiple methods
-      * [hello-world-module-methods](/01-modular_patterns_and_testing/demo/hello-world-module-methods)
 
 ## Intro to Testing
   * **What is TDD?**
@@ -68,6 +65,5 @@
         * often testing features of other features
       * integration: phase of testing where individual modules are combined and tested as a group
       * **demo:** basic module testing
-        * [hello-world-module-tests](/01-modular_patterns_and_testing/demo/hello-world-module-tests)
       * running mocha with a `/test` directory
       * using the `-w` watch flag

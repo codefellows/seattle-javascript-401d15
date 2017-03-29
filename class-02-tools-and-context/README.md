@@ -1,18 +1,33 @@
-401 JS -- class 02 gulp, npm, ref vs val, errors
+![cf](http://i.imgur.com/7v5ASc8.png) 02: Tools and Context
 ===
 
 ## package.json Resources
 * Read [about package.json]
 
-## Gulp Resources
-* Skim [gulp on github]
-* Skim [gulp api docs]
+## NPM Script Resources
+* Skim [npm scripts as build tools]
+* Skim [npm scripts docs]
+
+# Context resources
+* Read [MDN this]
+* Watch the Video [Javascript Context Tutorial]
+
+# Prototype resources
+* Skim [MDN new]
+* Skim [MDN Object prototype]
+* Read [MDN inheritance and the prototype chain]
 
 ## Error Resources
 * Read [node Error docs]
 
 ## Learning Objectives
 <!-- unordered list of learning objectives -->
+*
+*
+*
+* understand the difference between context and scope
+* learn how to configure a functions context
+* understand the roll context plays in constructor functions
 
 ## Overview
 #### package.json
@@ -28,7 +43,7 @@
  * run `npm init` and answer the questions
  * now you should find a package.json inside your current directory :)
 
-#### Gulp
+#### Gulp (just fyi)
 * Gulp is a tool that helps you automate time-consuming tasks that are a part of your dev workflow
 * Gulp is configured in pure javascript, so you can use any node module in a gulp task
 * Gulp has a awesome plugin ecosystem
@@ -73,170 +88,35 @@
 ###### Throw Try Catch
 * If an un handled error is thrown in javascript the program will crash
 * try catch blocks allow you to safely throw a an error and handle it
-``` javascript
-  // call an function that does not exist and the program will crash
-  let data = {};
-  data.name();
-```
-``` javascript
-// call a function that does not exists in a try block and handle the error in a catch block
-try {
-  let data = {};
-  data.name();
-} catch (err) {
-  console.error(err.message);
-}
-```  
-``` javascript
-// explicitly create and throw a custom error
-try {
-  let data = {name: 'adalove'};
-  if (data.name !== 'ada lovelace')
-    throw new Error('expected name to be "ada lovelace"');
-} catch(err) {
-  console.error(err.message);
-}
-```
+
 ### Pass by reference vs Pass by value
-``` javascript
-'use strict';
+*
+*
 
-const expect = require('chai').expect;
+### Call, Bind, Apply
+* when a function has a `this` we say that `this` is the functions context
+* unlike scope a functions context can be configured
+* If a function is not a property on an object, by default it has no context
+* If a function is a property on an object, by default that object is the context for that function
+* `call`, `bind`, and `apply` are function prototype methods that allow us to change the context of a function
+* `call` is a methods on a function that invokes a function with a specified context and arguments  
+ * `call` passes comma separated arguments
+* `apply` is a methods on a function that invokes a function with a specified context and arguments  
+ * `apply` passes arguments from an array  
+* don't mess with `__proto__` its slow **not even to read a property**
+* if you want to determine an objects prototype use `Object.getPrototypeOf(someObject)`
+* don't nest a lot of prototype's it will have a speed impact on your code
+* if you look up a property that is not on any object on the prototype chain it will still look through the whole prototype chain
 
-describe('testing behavior of data passed by value', function() {
-  describe('testing that numbers are passed by value', function(){
-    it('abc should not change when xyz is changed', () =>  {
-      let abc = 2;
-
-      let xyz = abc;
-      xyz += 10;
-      expect(abc).to.equal(2);
-      expect(xyz).to.equal(12);
-    });
-  });
-
-  describe('testing that strings are passed by value', function(){
-    it('abc should not change when xyz is changed', () =>  {
-      let abc = 'hello';
-      let xyz = abc;
-      xyz += ' world';
-      expect(abc).to.equal('hello');
-      expect(xyz).to.equal('hello world');
-    });
-  });
-
-  describe('testing that booleans are passed by value', function(){
-    it('abc should not change when xyz is changed', () =>  {
-      let abc = true;
-      let xyz = abc;
-      xyz = !xyz;
-      expect(abc).to.equal(true);
-      expect(xyz).to.equal(false);
-    });
-  });
-
-  describe('testing that objects are passed by reference', function(){
-    it('abc should not change when xyz is mutated', () =>  {
-      let abc = {
-        info: 'this is useful',
-      };
-
-      // reference abc with xzy
-      let xyz = abc;
-      // mutate xyz
-      xyz.info = 'look how interesting';
-      xyz.data = 6000;
-
-      expect(abc).to.equal(xyz);
-      expect(abc.info).to.equal('look how interesting');
-      expect(abc.data).to.equal(6000);
-      expect(xyz.info).to.equal('look how interesting');
-      expect(xyz.data).to.equal(6000);
-    });
-  });
-
-  describe('testing that objects are passed by value', function(){
-    it('abc should not change when xyz is reassigned', () =>  {
-      let abc = {
-        info: 'this is useful',
-      };
-
-      // reference abc with xzy
-      let xyz = abc;
-
-      // reassign xyz
-      xyz = {
-        info: 'cool er than cool',
-      }
-
-      expect(abc).to.not.equal(xyz);
-      expect(abc.info).to.equal('this is useful');
-      expect(xyz.info).to.equal('cool er than cool');
-    });
-  });
-});
-```
 
 <!--links -->
 [node Error docs]: https://nodejs.org/dist/latest-v6.x/docs/api/errors.html
 [about package.json]: https://docs.npmjs.com/files/package.json
-[gulp api docs]: https://github.com/gulpjs/gulp/blob/master/docs/API.md
-[gulp on github]: https://github.com/gulpjs/gulp
+[npm scripts as build tools]: https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/
+[npm scripts docs]: https://docs.npmjs.com/misc/scripts
+[MDN new]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new
 
-
-
-
-
-
-
-======
-# *MERGE THIS CONTENT*
-![cf](http://i.imgur.com/7v5ASc8.png) 02: Build Automation and Dependency Management
-=====================================
-
-## NPM (Node Package Manager)
-  * **Overview**
-    * `package.json`
-      * provides information about our app
-      * automate creation using `npm init -y`
-    * install new package: `npm i package-name`
-      * common flags:
-        * `--global` or `-g` - install package globally
-        * `--save` or `-S` - save as an app level dependency
-        * `--save-dev` or `-D` - save as developer dependency
-      * multiple packages can be installed by separating each package name with a space
-        * `npm i package-name another-package and-another`
-
-  * **Publishing Packages on NPM**
-    * add a user: `npm adduser`
-    * run `npm config ls` to ensure your user was created successfully
-    * you can now publish packages with `npm publish`
-
-## GulpJS
-  * **Overview**  
-    * JS task runner and automation tool
-    * built around a strong ecosystem of available plugins
-    * highly useful for automation of common tasks (linting, testing, etc)
-    * global install: `npm i -g gulp-cli`
-    * local install: `npm i -D gulp`
-
-  * **Creating a `gulpfile.js`**
-    * **demo:** adding a `gulpfile.js` to our `hello-world` app
-      * [hello-world-gulp](/02-build_automation_and_dependency_management/demo/hello-world-gulp)
-    * general setup process:
-      * `require` gulp and task plugins: `gulp`, `gulp-eslint`, `gulp-mocha`
-      * setup globs and add tasks: `lint`, `test`, and `default`
-        * review docs for using `gulp-eslint`
-        * review docs for using `gulp-mocha`
-      * add a `dev` task - this runs the default task when a file is saved (`watch` for changes)
-
-## ChaiJS
-  * **Overview**
-    * assertion library with rich BDD language chains
-    * works well with MochaJS
-    * [documentation overview](http://chaijs.com/api/)
-
-  * **Working with `expect`**
-    * language chains overview
-    * **demo:** refactoring our `hello-world` app tests
-      * [hello-world-expect-tests](/02-build_automation_and_dependency_management/demo/hello-world-expect-tests)
+[MDN Object prototype]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
+[MDN inheritance and the prototype chain]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+[MDN this]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+[Javascript Context Tutorial]: https://www.youtube.com/watch?v=fjJoX9F_F5g
