@@ -16,13 +16,12 @@
     * **rejected** - the operation failed
 
   * **Methods**
-    * `Promise.all()` - returns a promise that fulfills when all of the promises in an provided array have fullfiled *or* returns a promise that rejects when one of the items in the array rejects
+    * `Promise.all()` - returns a promise that fulfills when all of the promises in an provided array have fulfilled *or* returns a promise that rejects when one of the items in the array rejects
     * `Promise.reject()` - returns a `Promise` object that is rejected
     * `Promise.resolve()` - returns a `Promise` object that is resolved with a given value
     * `catch()` - returns a `Promise` that deals with rejected cases only
     * `then()` - returns a `Promise` that deals with fulfilled cases
     * **demo:** working with promises
-      * [promise-demo](/08-vanilla_rest_api/demo/promise-demo.js)
 
 ## Vanilla REST API
   * **Overview**
@@ -31,9 +30,7 @@
     * in addition to the creation of our API, we'll be adding tests that check our API calls for the expected response data
       * this will be done through the use of `superagent` and ChaiJS (`expect`)
       * **remember:** include the server in your test file so that your server is running during the testing process
-      * [superagent docs](https://visionmedia.github.io/superagent/)
     * **demo:** Vanilla REST API
-      * [vanilla-rest-api](/08-vanilla_rest_api/demo/vanilla-rest-api)
 
   * **Helper Commands**
     * start the server: `node server.js`

@@ -1,4 +1,4 @@
-401 JS -- class 06 OSI model, TCP protocol
+![cf](http://i.imgur.com/7v5ASc8.png) 401 JS -- class 06 OSI model, TCP protocol
 ===
 
 ## OSI Resources

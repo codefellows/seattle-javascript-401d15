@@ -56,4 +56,3 @@
       * ex: `username:password`
 
   * **demo:** basic auth demo & start of `CFgram` application build out
-    * [basic-auth-demo](/15-basic_auth/demo/auth-demo)

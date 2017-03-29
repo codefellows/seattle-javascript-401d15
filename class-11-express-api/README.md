@@ -6,13 +6,13 @@
     * `express.js` is a web application framework that provides us with a series of tools that are used to simplify the development process
     * it is excellent at handling much of the heavy lifting that a modern REST API requires
     * it also provides us with useful helpers to manage requests, routes, and even views
-    * in addition to managing requests and routes, it provides us with the ability to create our own middeware components
+    * in addition to managing requests and routes, it provides us with the ability to create our own middleware components
       * middleware provides us with access to the `req` and `res` objects
       * middleware also provides us with the ability to access the `next` middleware function in the `req` and `res` cycle
 
   * **Route Methods**
     * `express.js` provides us with simple to use route methods and parameters
-    * example route methods and useage:
+    * example route methods and usage:
     ```javascript
       const express = require('express');
       const app = express();

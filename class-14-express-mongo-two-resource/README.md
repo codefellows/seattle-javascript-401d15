@@ -21,7 +21,6 @@
     * population is handled through the use of the `populate()` method and will populate your resource with a connection to another resource by using it's schema name
       * example: `populate('notes')`
     * **demo:** **MongoDB** and **Express** two resource API
-      * [mongo-express-two-resource-api](/14-mongo_express_two_resource_api/demo/mongo_express_two_resource_api)
 
 ## 2 Resource API Visualization
  ![visualization](https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/expressmongomap.png)
