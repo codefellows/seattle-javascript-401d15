@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 18: AWS S3
 =====================================
 
+## SSH Encryption Resources
+* Read [SSH Encryption]
+
 ## AWS S3
   * **Overview**
     * S3 *(Amazon Simple Storage Service)* is a scalable object storage platform
@@ -25,3 +28,6 @@
     * `multer` - used for handling multipart form data (`entype="multipart/form-data"`)
     * `del` - deletes files and folders
     * `aws-sdk` - official sdk (software development kit) with helper tools for working with AWS
+
+<!-- links -->
+[SSH Encryption]: https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process

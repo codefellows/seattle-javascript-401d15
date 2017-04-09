@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 14: MongoDB & Express Two Resource API
 =====================================
 
+## Mongoose Populations Resources
+* Read [Mongoose Populations]
+
 ## Working with Multiple Resources
   * **Overview**
     * most APIs contain a series of relationships that exist between resources
@@ -24,3 +27,6 @@
 
 ## 2 Resource API Visualization
  ![visualization](https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/expressmongomap.png)
+
+<!-- links -->
+[Mongoose Populations]: http://jaketrent.com/post/mongoose-population/

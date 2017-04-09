@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 12: Express Middleware
 =====================================
 
+## Express Middleware Resources
+* Read: * Read: [Express middleware]
+
 ## Middleware
   * **Overview**
     * middleware functions are functions that have access to the `req` and `res` objects
@@ -28,3 +31,6 @@
 
 ## Express API Visualization
   ![visualization](https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/express-api.png)
+
+<!-- links -->
+[Express middleware]: http://expressjs.com/en/guide/using-middleware.html

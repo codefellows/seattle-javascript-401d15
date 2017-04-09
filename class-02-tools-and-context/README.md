@@ -22,9 +22,6 @@
 
 ## Learning Objectives
 <!-- unordered list of learning objectives -->
-*
-*
-*
 * understand the difference between context and scope
 * learn how to configure a functions context
 * understand the roll context plays in constructor functions
@@ -89,9 +86,9 @@
 * If an un handled error is thrown in javascript the program will crash
 * try catch blocks allow you to safely throw a an error and handle it
 
-### Pass by reference vs Pass by value
+<!-- ### Pass by reference vs Pass by value
 *
-*
+* -->
 
 ### Call, Bind, Apply
 * when a function has a `this` we say that `this` is the functions context

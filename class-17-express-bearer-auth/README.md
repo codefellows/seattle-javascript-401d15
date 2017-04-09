@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 17: Bearer Auth
 =====================================
 
+## JSON Web Token Resources
+* Read [JSON Web Tokens]
+
 ## Bearer Auth
   * **Overview**
     * using standard HTTP, we can use *bearer* auth tokens to access protected resources
@@ -18,3 +21,6 @@
 
 ## CFGram Visualization
   ![visualization](https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/cfgram.png)
+
+<!-- links -->
+[JSON Web Tokens]: https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens

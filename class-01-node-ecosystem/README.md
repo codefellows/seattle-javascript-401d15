@@ -3,6 +3,10 @@
 
 ## Kickoff
 
+## Resources
+* Read [modular patterns]
+* Read [basic testing with mocha & chai]
+
 ## What is NodeJS?
   * **Overview**
     * open source JS framework
@@ -67,3 +71,7 @@
       * **demo:** basic module testing
       * running mocha with a `/test` directory
       * using the `-w` watch flag
+
+<!--links -->
+[modular patterns]: https://docs.nodejitsu.com/articles/getting-started/what-is-require
+[basic testing with mocha & chai]: http://code.tutsplus.com/tutorials/testing-in-nodejs--net-35018

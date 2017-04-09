@@ -6,6 +6,10 @@
 * Skim [Wiki list of header fields]
 * Read [What is a rest api?]
 
+## Testing Resources
+* Read [Chai HTTP]
+* Read [Superagent Docs]
+
 ## Learning Objectives
 * Students will be able to identify qualities of the HTTP protocol
 * Students will be able to implement an HTTP server using Nodejs
@@ -90,3 +94,5 @@
 [Nodejs http module]: https://nodejs.org/api/http.html
 [What is a rest api?]: https://medium.com/@lazlojuly/what-is-a-restful-api-fabb8dc2afeb#.nm7uiiltt
 [Wiki list of header fields]: https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields
+[Chai HTTP]: https://github.com/chaijs/chai-http
+[Superagent Docs]: https://visionmedia.github.io/superagent/

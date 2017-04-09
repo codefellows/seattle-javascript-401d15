@@ -7,6 +7,10 @@
 ## fs Module Resources
 * Read [fs module docs]
 
+## Buffers Resources
+* Read [node buffer docs]
+* Read [how to use buffers]
+
 ## Learning Objectives
 
 ## Overview
@@ -139,3 +143,5 @@ Javascript is a single threaded language. Which means that it can only do a sing
 <!--links -->
 [what the heck is the event loop anyway]: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 [fs module docs]: https://nodejs.org/dist/latest-v6.x/docs/api/fs.html
+[node buffer docs]: http://nodejs.org/api/buffer.html
+[how to use buffers]: https://docs.nodejitsu.com/articles/advanced/buffers/how-to-use-buffers

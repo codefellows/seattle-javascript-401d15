@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 16: Basic Auth
 =====================================
 
+## CI Resources
+* Read [TravisCI]
+
 ## Continuous Integration (CI)
   * **Overview**
     * CI is the concept of merging new code into a collaborative repository multiple times a day
@@ -56,3 +59,6 @@
       * ex: `username:password`
 
   * **demo:** basic auth demo & start of `CFgram` application build out
+
+<!-- links -->
+[TravisCI]: https://docs.travis-ci.com/user/languages/javascript-with-nodejs/

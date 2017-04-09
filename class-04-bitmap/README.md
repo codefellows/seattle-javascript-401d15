@@ -2,7 +2,7 @@
 ===
 
 ## Event Emitter Resources
-* [events api docs]
+* Read [events api docs]
 
 ## Bitmap Resources
 * Read [bitmap file format]

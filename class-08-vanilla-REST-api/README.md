@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 08: Vanilla REST API
 =====================================
 
+## JS Promise Resources
+* Read [JavaScript Promises]
+
 ## Promises
   * **Overview**
     * promises are used to solve the problem of nested callbacks (aka: "callback hell")
@@ -47,3 +50,6 @@
 
 ## Vanilla REST API Visualization Map
   ![visualization](https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/vanilla-rest-api.png)
+
+<!-- links -->
+[JavaScript Promises]: http://www.html5rocks.com/en/tutorials/es6/promises/

@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 13: Mongo and Express
 =====================================
 
+## Mongo Resources
+* Read [Little MongoDB Book]
+
 ## MongoDB
   * **Overview**
     * **MongoDB** is a document based (noSQL) database
@@ -37,3 +40,6 @@
     * `db.collection.find()` - show all documents in the collection
     * `db.collection.insert({ <data> })` - insert a new document into the collection
     * `db.collection.save()` - insert a new document or update an existing document in the collection
+
+<!-- links -->
+[Little MongoDB Book]: http://openmymind.net/2011/3/28/The-Little-MongoDB-Book/

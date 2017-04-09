@@ -1,6 +1,12 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 11: Single Resource Express API
 =====================================
 
+## Express Resources
+* Read: [Express routing]
+* Read: [Express routing guide]
+* Read: [Express hello world guide]
+
+
 ## Express
   * **Overview**
     * `express.js` is a web application framework that provides us with a series of tools that are used to simplify the development process
@@ -33,3 +39,9 @@
       * in our application, this is used to debug modules and start the server
       * in our application, the command for this would normally be: `DEBUG='note*' node server.js`
     * `nodemon server.js` - this will run the `nodemon` application, which is used to monitor our application for changes and restart the server if a change is made
+
+
+<!-- links -->
+[Express routing]: http://expressjs.com/starter/basic-routing.html
+[Express routing guide]: http://expressjs.com/guide/routing.html
+[Express hello world guide]: http://expressjs.com/starter/hello-world.html

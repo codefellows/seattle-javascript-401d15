@@ -8,6 +8,10 @@
 * Watch [TCP connection walkthrough]
 * Skim [TCP wiki]
 
+## Streams Resources
+* Read [Node Streams Handbook]
+* Read [Node Streams Docs]
+
 ## Learning Objectives
 
 ## Overview
@@ -71,3 +75,5 @@ The Physical Layer consists of the networking hardware.
 [OSI model wiki]: https://en.wikipedia.org/wiki/OSI_model
 [TCP wiki]: https://en.wikipedia.org/wiki/Transmission_Control_Protocol
 [TCP connection walkthrough]: https://www.youtube.com/watch?v=F27PLin3TV0
+[Node Streams Handbook]: https://github.com/substack/stream-handbook
+[Node Streams Docs]: http://nodejs.org/api/stream.html
