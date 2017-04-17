@@ -2,6 +2,19 @@
 =====================================
 
 ## Kickoff
+* Intros
+  * What do you want to do when you're done with 401?
+* Canvas/Slack/Surveys/etc...
+  * Calendar
+  * YouTube link
+  * General overview
+* Pre-work: Great job!!
+* Recap Career Development in 401
+* Weekly pattern for 401JS - Mon-Thurs Code, Fri Career Dev
+* Github - Course & Labs Repos
+* TA / Instructor Support Workflow - Do your research...
+* Lightning Talks & 1:1s
+* Questions?
 
 ## Resources
 * Read [modular patterns]
