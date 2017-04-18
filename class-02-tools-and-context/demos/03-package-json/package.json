@@ -1,0 +1,23 @@
+{
+  "name": "03-package-json",
+  "version": "1.0.0",
+  "description": "package.json demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "eslint ./lib",
+    "build": "npm run lint && npm run test",
+    "install": "npm install"
+  },
+  "keywords": [
+    "test",
+    "package.json",
+    "npm"
+  ],
+  "author": "Code Fellows",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "mocha": "^3.2.0"
+  }
+}

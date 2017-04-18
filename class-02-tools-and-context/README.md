@@ -1,6 +1,13 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 02: Tools and Context
 ===
 
+## Daily Plan
+* Note: Please don't change any files in the root of the lab directories, other than adding your own lab dir.
+* Graduation period... start thinking about timing
+* Review lab01 briefly
+* Try/Catch & Pass by ref / Pass by val...
+
+
 ## package.json Resources
 * Read [about package.json]
 
