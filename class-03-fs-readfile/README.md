@@ -1,6 +1,22 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 03: Parallel File Processing
 =====================================
 
+## Daily Plan
+* Notes:
+  * Test-script for lab repositories
+  * Breaks at 1hr
+  * Submission time (from noon to 1p)
+  * Lightning Talks
+
+* JS Runtime Overview:
+  * single threaded awesomeness!
+  * Sync vs Async
+* Hoisting / Event loop
+* Callbacks / Callback Pattern
+* Mocha / Chai Testing
+* Buffers - Intro to Binary!
+* File System / Node FS module
+
 ## JS Runtime Resources
 * Watch [what the heck is the event loop anyway]
 
@@ -108,7 +124,7 @@ Javascript is a single threaded language. Which means that it can only do a sing
 #### fs module
 * the fs module is the node interface to the file system
 * the fs module has synchronous and asynchronous methods
-* if the method does not have sync in its name you can assume its synchronous
+* if the method has `Sync` in its name you can assume its synchronous
 * in this class we will **NEVER** use the synchronous methods
 * useful globals
   * `__dirname` - the absolute path to the directory the current file is in

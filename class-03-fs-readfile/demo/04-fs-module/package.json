@@ -1,0 +1,19 @@
+{
+  "name": "04-fs-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fs-module-test.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
