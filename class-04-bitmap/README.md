@@ -1,6 +1,18 @@
 401 JS -- class 04 Event Emitters, Buffers, and Bitmaps
 ===
 
+## Daily Plan
+* Lightning Talks!
+
+* Notes:
+  * Quick review of FS Lab
+* Binary Data
+* Buffers Part Deuce
+* Event Emitters
+* Bitmap Groups & Intro
+
+
+
 ## Event Emitter Resources
 * Read [events api docs]
 
@@ -113,10 +125,10 @@ The Buffer class is a global, making it very rare that one would need to ever re
 * Make sure your using the methods that correspond to your systems **endianness**
 
 ###### Creating buffers
-* ` new Buffer(size) ` allocates a new buffer of size octets(bytes)
-* ` new Buffer(array) ` allocates a new buffer using an array of octets
-* ` new Buffer(buffer) ` copies the passed buffer data onto a new Buffer instance
-* ` new Buffer(str, *encoding) ` allocates a new buffer containing a giving string, defaults to utf8
+* ` Buffer.alloc(size) ` allocates a new buffer of size octets(bytes)
+* ` Buffer.from(array) ` allocates a new buffer using an array of octets
+* ` Buffer.from(buffer) ` copies the passed buffer data onto a new Buffer instance
+* ` Buffer.from(str, *encoding) ` allocates a new buffer containing a giving string, defaults to utf8
 
 ###### buffer info
 * ` Buffer.isBuffer(obj) ` test is obj is Buffer -> return boolean
