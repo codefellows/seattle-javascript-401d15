@@ -1,4 +1,4 @@
-'use strict'
+  'use strict'
 
 const fs = require('fs')
 const bitmap = fs.readFileSync(`${__dirname}/data/bitmap.bmp`)

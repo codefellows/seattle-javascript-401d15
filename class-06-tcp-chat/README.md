@@ -1,6 +1,18 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 401 JS -- class 06 OSI model, TCP protocol
 ===
 
+## Daily Plan
+* Lightning Talks!
+
+* Weekly Overview: What's comin' up!
+* Bitmap: How'd it go?
+* DSA-01:
+  * Big-O Notation
+  * Functional Programming Pt 1
+* OSI Model
+* Protocols: TCP
+* TCP Chat Server Demo
+
 ## OSI Resources
 * Skim [OSI model wiki]
 
