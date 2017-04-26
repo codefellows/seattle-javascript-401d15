@@ -1,6 +1,23 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 07: HTTP and REST APIs
 ===
 
+## Daily Plan
+* Lightning Talks!
+
+* Notes:
+  * Typing along in class... consider not doing it.
+  * Asking for help via Slack
+* Data Structures - List
+* TDD HTTP
+  * SuperAgent (just an HTTP client)
+  * PostMan, HTTPie, cURL, etc
+* HTTP Overview & Status Codes
+  * WRRC Review
+    * Request - method, headers, url
+    * Response - body, headers, status
+* REST Review
+
+
 ## HTTP Resources
 * Skim [Nodejs http module]
 * Skim [Wiki list of header fields]
