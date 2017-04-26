@@ -13,6 +13,15 @@ const server = module.exports = http.createServer(function(req, res) {
   req.url.query = queryString.parse(req.url.query)
 
   if(req.method === 'POST') {
+    // NOTE: below is a cURL command that can be run from the terminal when your server is running
+    // curl -H "Content-Type: application/json" -X POST -d '{"text": "moo!"}' http://localhost:3000/cowsay
+
+    // curl (primary command)
+    // -H "Content-Type: application/json" (sets the headers)
+    // -X POST (sets the POST method)
+    // -d {"text": "moo!"} (sets the req.body data)
+    // http://localhost:3000/cowsay (url for the request)
+    
     if(req.url.pathname === '/cowsay') {
       bodyParser(req, function(err) {
         if(err) console.error(err)
@@ -20,7 +29,7 @@ const server = module.exports = http.createServer(function(req, res) {
         console.log(req.body)
         res.writeHead(200, {'Content-Type': 'text/plain'})
         res.write(message)
-        res.end() // this will not be here; will be in a asych callback(s)
+        res.end()
       })
     } else {
       let message = cowsay.say(

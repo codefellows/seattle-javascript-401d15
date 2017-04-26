@@ -17,7 +17,10 @@ describe('Server module', function() {
   describe('POST method', function() {
     describe('/ endpoint', function() {
       it('should respond with a 400 on bad request', done => {
-        chai.request(server).post('/mokeysay').send({}).end(function(res) {
+        chai.request(server)
+        .post('/mokeysay')
+        .send({})
+        .end((err, res) => {
           expect(res.status).to.equal(400)
         })
         done()
