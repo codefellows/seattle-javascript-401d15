@@ -10,8 +10,12 @@ function isBigNumber(num) {
 let isLarge = isBigNumber(100000)
 console.log(isLarge)
 
+function _success(data) {
+  console.log('this is my data', data)
+}
+
 isBigNumber(1000000)
-.then(data => console.log(data))
+.then(_success)
 .catch(error => console.error(error))
 
 

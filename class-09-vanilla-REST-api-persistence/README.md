@@ -1,6 +1,18 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 09: Vanilla REST API with Persistence
 =====================================
 
+## Daily Plan
+* Lightning Talks!
+
+* Notes:
+  * Career Dev - Lunch N Learn on Friday w/ Socrata
+  * API Projects (week 5) - co-work with iOS Final Projects (week 10)
+* Testing our servers
+* Code review: day 08
+* Persistence
+* Promisifying the FS module (bluebird) (live demo)
+<!-- * Response Module (live demo) -->
+
 ## Persistence
   * **Overview**
     * today, we are refactoring our vanilla REST API to include a layer of file system persistence
