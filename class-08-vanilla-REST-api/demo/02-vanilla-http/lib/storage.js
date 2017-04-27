@@ -33,16 +33,3 @@ exports.fetchItem = function(schema, id) {
     resolve(item)
   })
 }
-
-exports.fetchAll = function(schema) {
-  debug('#fetchAll')
-
-  return new Promise((resolve, reject) => {
-    if(!schema) return reject(new Error('schema required'))
-
-    let ids = Object.keys(storage[schema])
-    if(!ids) return reject(new Error('no items found'))
-
-    resolve(ids)
-  })
-}
