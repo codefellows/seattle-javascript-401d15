@@ -1,5 +1,19 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 08: Vanilla REST API
+/![cf](http://i.imgur.com/7v5ASc8.png) 08: Vanilla REST API
 =====================================
+
+## Daily Plan
+* Lightning Talks!
+
+* Notes:
+  * READMEs/Docs
+* Brief review of Cowsay Tests
+* Promises!!
+* Debug Module
+* Vanilla RESTful API
+  * Routers
+    * Get, Post, Put, Delete Methods
+  * In-memory Resources (storage)
+
 
 ## JS Promise Resources
 * Read [JavaScript Promises]
@@ -44,9 +58,6 @@
       * `http POST localhost:8000/api/note name="name of the note" content="some content for the note"`
     * for more useful commands when using `httpie`, check out the docs: [httpie docs](https://httpie.org/doc)
 
-  * **More ES6**
-    * **`let`** - declares a block scope local variable (this limits it's usage to the block, statement, or expression in which it is used)
-    * **arrow functions (aka fat arrow functions)** `() =>` offer a more concise syntax for writing function expressions and change the way that `this` binds in functions
 
 ## Vanilla REST API Visualization Map
   ![visualization](https://s3-us-west-2.amazonaws.com/s.cdpn.io/154088/vanilla-rest-api.png)
