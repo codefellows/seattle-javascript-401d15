@@ -1,6 +1,17 @@
 401JS -- Linked Lists
 ================================
 
+## Daily Plan
+
+* Notes:
+  * Final Whiteboard Exam
+* Data Structures - Why?
+* Review whiteboarding
+* Linked Lists
+  * Live-code: append/prepend
+  * Whiteboarding
+* Review Lab Assignment
+
 ## Abstract Data Type Resources
 * Skim [ADT Wiki]
 
