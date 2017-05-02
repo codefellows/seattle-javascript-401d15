@@ -1,11 +1,27 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 11: Single Resource Express API
 =====================================
 
+## Daily Plan
+* Lightning Talks [15 minutes]
+
+* Notes: [15 minutes]
+  * API Projects w/iOS
+  * Career Dev 01 w/Brandy - Date change
+  * Survey Comments (readings, lecture time)
+  * AIR Acronym...
+
+* Review Data Structures - Linked List [30 minutes]
+  * Reverse Methods
+* Review Last week [15 minutes]
+* Review Express as a Routing framework [15 minutes]
+* Architecture Visual & Code Demo
+
+
+
 ## Express Resources
 * Read: [Express routing]
 * Read: [Express routing guide]
 * Read: [Express hello world guide]
-
 
 ## Express
   * **Overview**
