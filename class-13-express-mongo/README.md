@@ -1,6 +1,19 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 13: Mongo and Express
 =====================================
 
+## Daily Plan
+* Lightning Talks
+
+* Notes:
+  * We're writing a lot of code! You'll want to start considering a boiler plate, but don't use it yet!
+  * Join me in Lovelace at 11:45a for Adam and Scott to release a quick review of upcoming project week and meet your team.
+  
+
+* Persistence Layer
+* Mongo -setup
+* Mongoose -setup
+
+
 ## Mongo Resources
 * Read [Little MongoDB Book]
 

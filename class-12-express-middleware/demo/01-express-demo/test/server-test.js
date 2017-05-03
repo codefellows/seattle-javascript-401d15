@@ -11,14 +11,6 @@ chai.use(http)
 
 describe('server module', function() {
   let app
-  before(done => {
-    app = server.listen(8000)
-    done()
-  })
-  after(done => {
-    app.close()
-    done()
-  })
   describe('GET', function() {
     // all the tests
   })
@@ -62,7 +54,7 @@ describe('server module', function() {
         .put('/api/note')
         .send({id: notes[0].id, name: 'foobar', details: notes[0].details})
         .end((err, res) => {
-          expect(res.body.name).to.equal('fobar')
+          expect(res.body.name).to.equal('foobar')
           done()
         })
       })
