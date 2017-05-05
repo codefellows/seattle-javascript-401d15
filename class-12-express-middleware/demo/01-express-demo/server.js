@@ -24,6 +24,6 @@ app.use(router)
 app.listen(PORT, () => console.log(`Listening on port, ${PORT}`))
 
 router.stack.forEach(layer => {
-  // console.log(`${layer.route.stack[0].method.toUpperCase()}: ${layer.route.path}`)
-  console.log(layer.route.stack[0]);
+  console.log(`${layer.route.stack[0].method.toUpperCase()}: ${layer.route.path}`)
+  // console.log(layer.route.stack[0]);
 })
