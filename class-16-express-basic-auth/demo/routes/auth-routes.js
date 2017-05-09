@@ -18,7 +18,7 @@ module.exports = function(router) {
     .then(user => user.save())
     .then(user => user.generateToken())
     .then(token => res.json(token))
-    .catch(err => res.status(err.status).send(err)) // NOTE NEEDS WORK
+    .catch(err => res.status(err.status).send(err))
   })
 
   router.get('/signin', basicAuth, (req, res) => {
