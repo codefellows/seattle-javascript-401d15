@@ -1,6 +1,43 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 16: Basic Auth
 =====================================
 
+## Daily Plan
+* Lightning Talks
+
+* Notes:
+  *
+
+* High level review of this week! CF-Gram!!
+  * Monday - Basic Auth & CI
+  * Tuesday - Bearer Auth
+  * Wednesday - AWS S3 Storage
+  * Thursday - Heroku Deployment & Pipelines
+  * Friday - Project kick-off!!
+
+* Continuous Integration
+  * TravisCI Intro (review...)
+  * CoverAlls for test coverage
+
+* Authorization
+  * General Overview
+  * Password hashing - what is this devilry?
+  * Reminder:
+    * To Store a Password
+      - Generate a long random salt using a CSPRNG. (Cryptographically Secure Pseudo-Random Number Generator)
+      - Prepend the salt to the password and hash it with a standard password hashing function like Argon2, bcrypt, scrypt, or PBKDF2.
+      - Save both the salt and the hash in the user's database record.
+
+    * To Validate a Password
+      - Retrieve the user's salt and hash from the database.
+      - Prepend the salt to the given password and hash it using the same hash function.
+      - Compare the hash of the given password with the hash from the database. If they match, the password is correct.
+      - Otherwise, the password is incorrect.
+
+* CF-Gram Introduction
+  * Live Code & Review Project Scaffold (live code)
+  * Basic Authentication (live code)
+    * Sign-in & Sign-up
+
 ## CI Resources
 * Read [TravisCI]
 
@@ -32,11 +69,13 @@
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - gcc-4.8
-            - g++-4.8
+            - gcc-5
+            - g++-5
       env:
-        - CXX=g++-4.8
+        - CXX=g++-5
       sudo: required
+      after_success:
+        - npm run coveralls
       before_script: npm i
       script:
         - npm run test
