@@ -1,6 +1,16 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 18: AWS S3
 =====================================
 
+## Daily Plan
+* Lightning Talks
+* Notes:
+  * Project Notes
+  * Friday 1p - Complete Team Expectations with whole group
+  * Each group meets with us for 15 minutes after that
+
+
+
+
 ## SSH Encryption Resources
 * Read [SSH Encryption]
 
