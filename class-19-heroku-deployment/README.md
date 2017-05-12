@@ -1,5 +1,18 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 18: Deployment
+![cf](http://i.imgur.com/7v5ASc8.png) 19: Deployment
 =====================================
+
+## Daily Plan
+* Lightning Talks
+
+* Notes:
+  * Second half Lightning talks || 10 min whiteboard questions each day?
+  * TESTING w/S3 - create a test bucket
+* Node Debugger!! (Down with console.log!)
+* Deployment & Tools
+  * Travis-CI Part Deux
+  * Coveralls Part Deux
+  * Heroku Deployment & Pipelines
+    * Heroku Logs
 
 ## Deployment, Heroku, TravisCI & Configuring Staging/Production Pipelines
   * **TravisCI**
