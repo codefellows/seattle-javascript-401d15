@@ -86,7 +86,10 @@ picCtrl.delete = function(id) {
 
   return Pic.findById(id)
   .then(pic => {
-    console.log(pic);
+    pic.remove()
+    return pic
+  })
+  .then(pic => {
     let params = {
       Bucket: process.env.AWS_BUCKET,
       Key: pic.objectKey
