@@ -2,10 +2,10 @@
 =====================================
 
 ## Resources
-Complete: [a better way to learn angularjs] (first three parts: Introduction, Kicking the Tires, and Taking it for a Spin)
-Skim: [angular developer guide]
-Read: [introduction to webpack]
-Complete: [getting started with webpack]
+* Complete: [a better way to learn angularjs] (first three parts: Introduction, Kicking the Tires, and Taking it for a Spin)
+* Skim: [angular developer guide]
+* Read: [introduction to webpack]
+* Complete: [getting started with webpack]
 
 ## Single Page Applications (SPAs)
   * **Overview**
