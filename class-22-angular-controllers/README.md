@@ -1,6 +1,13 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 22: Angular Controllers
 =====================================
 
+## Resources
+Read: [controller-as or scope]
+Read: [controllers with or without sugar]
+Skim: [angular docs scope]
+Skim: [angular docs ngController]
+Optional: [understanding scope]
+
 ## Getting Started with Controllers
   * **Overview**
     * controllers are constructor functions that are used to modify the angular **scope**
@@ -36,3 +43,9 @@
       </ul>
     </nav>
     ```
+    
+[controller-as or scope]: http://codetunnel.io/angularjs-controller-as-or-scope/
+[controllers with or without sugar]: https://johnpapa.net/do-you-like-your-angular-controllers-with-or-without-sugar/
+[angular docs scope]: https://docs.angularjs.org/guide/scope
+[angular docs ngController]: https://docs.angularjs.org/api/ng/directive/ngController
+[understanding scope]: https://github.com/angular/angular.js/wiki/Understanding-Scopes
