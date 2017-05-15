@@ -2,11 +2,11 @@
 =====================================
 
 ## Resources
-Read: [controller-as or scope]
-Read: [controllers with or without sugar]
-Skim: [angular docs scope]
-Skim: [angular docs ngController]
-Optional: [understanding scope]
+* Read: [controller-as or scope]
+* Read: [controllers with or without sugar]
+* Skim: [angular docs scope]
+* Skim: [angular docs ngController]
+* Optional: [understanding scope]
 
 ## Getting Started with Controllers
   * **Overview**
