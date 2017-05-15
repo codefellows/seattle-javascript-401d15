@@ -2,7 +2,6 @@
 =====================================
 
 ## Resources
-* Skim: [angular docs filter]
 * Skim: [angular docs templates]
 * Skim: [angular docs expressions]
 * Skim: [angular docs interpolation]
@@ -30,8 +29,6 @@
     * `audio/basic`
 
 
-
-[angular docs filter]: https://docs.angularjs.org/guide/filter
 [angular docs templates]: https://docs.angularjs.org/guide/templates
 [angular docs expressions]: https://docs.angularjs.org/guide/expression
 [angular docs interpolation]: https://docs.angularjs.org/guide/interpolation
