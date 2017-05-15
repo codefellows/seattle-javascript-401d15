@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 34: Angular UI Bootstrap
 =====================================
 
+## Resources
+* Read: [angular ui bootstrat]
+
 ## Angular UI Bootstrap
   * **Overview**
     * `angular-ui-bootstrap` is an `npm` module that will give us access to many useful UI directives
@@ -27,3 +30,5 @@
       * tooltips
       * modals
       * badges
+
+[angular ui bootstrap]: https://angular-ui.github.io/bootstrap/
