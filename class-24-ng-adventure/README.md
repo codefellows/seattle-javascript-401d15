@@ -1,6 +1,12 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 24: ng-Adventure
 =====================================
 
+## Resources
+* Read: [practical guide to angular directives]
+* Skim: [mastering angular directives]
+* Read: [Angular factory vs service vs provider]
+
+
 ## Directives
   * **Overview**
     * directives are a special form of markup that provide us with the ability to add special behavior to elements or attributes
@@ -39,3 +45,9 @@
     * we use services to build libraries for handling things like state and AJAX requests
     * angular services can be injected into controllers and other services for added layers of modularity
     * we'll be using services in the `ngAdventure` application to manage our map and player procedural logic and state
+    
+    
+    
+[practical guide to angular directives]: http://www.sitepoint.com/practical-guide-angularjs-directives/
+[mastering angular directives]: http://code.tutsplus.com/tutorials/mastering-angularjs-directives--cms-22511
+[Angular factory vs service vs provider]: http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/
