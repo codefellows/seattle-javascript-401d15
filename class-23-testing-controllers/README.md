@@ -2,10 +2,10 @@
 =====================================
 
 ## Resources
-Read: [testing controllers]
-Skim: [end-2-end testing]
-Skim: [practical protractor]
-Skim: [protractor tutorial]
+* Read: [testing controllers]
+* Skim: [end-2-end testing]
+* Skim: [practical protractor]
+* Skim: [protractor tutorial]
 
 ## Testing Controllers
   * **Overview of Technologies**
