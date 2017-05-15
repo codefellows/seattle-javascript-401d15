@@ -1,6 +1,12 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 23: Testing Angular Controllers
 =====================================
 
+## Resources
+Read: [testing controllers]
+Skim: [end-2-end testing]
+Skim: [practical protractor]
+Skim: [protractor tutorial]
+
 ## Testing Controllers
   * **Overview of Technologies**
     * `Karma` is a test runner for running tests against code that would normally be ran in a browser enviornment
@@ -48,3 +54,8 @@
       });
     };
     ```
+    
+[testing controllers]: http://www.bradoncode.com/blog/2015/06/05/ngmock-fundamentals-testing-controllers/
+[end-2-end testing]: https://docs.angularjs.org/guide/e2e-testing
+[practical protractor]: http://www.ng-newsletter.com/posts/practical-protractor.html
+[protractor tutorial]: https://angular.github.io/protractor/#/tutorial
