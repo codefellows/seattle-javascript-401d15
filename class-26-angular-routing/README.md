@@ -1,6 +1,9 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 26: Client Side Routing
 =====================================
 
+## Resources
+* Read: [http and server interactions]
+
 ## Client Side Routing
   * **Overview**
     * client side routing follows the same concepts as server side routing except that it is ran in the browser
@@ -20,3 +23,6 @@
     * service providers can be injected into a module's config method
     * `$logProvider` is used to enable/disable `$log`'s logging
     * `$httpProvider` is usd to configure default behaviors for `$http`
+
+
+[http and server interactions]: https://thinkster.io/a-better-way-to-learn-angularjs#http-and-server-interaction

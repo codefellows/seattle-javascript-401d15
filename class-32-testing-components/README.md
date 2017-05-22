@@ -1,6 +1,10 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 32: Testing Components
 =====================================
 
+## Resources
+* Read: [singletons]
+* Read: [factories]
+
 ## Unit Testing & Angular Mocks
   * **Overview**
     * we'll be using the `angular-mocks` npm module to allow for unit testing of our controllers, components, and services
@@ -13,3 +17,6 @@
       * setup mocks
       * make the request
       * flush the server
+
+[singletons]: http://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript 
+[factories]: http://addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript

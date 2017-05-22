@@ -1,6 +1,12 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 27: Client Side Auth
 =====================================
 
+## Resources
+* Read: [auth made simple]
+* Read: [angular auth techniques]
+* Read: [angular signup login]
+* Read: [implementing auth]
+
 ## Auth Service
   * **Overview**
     * using a service, we can create a library for client side authentication
@@ -30,3 +36,10 @@
     }),
   ];
   ```
+
+
+
+[auth made simple]: http://brewhouse.io/blog/2014/12/09/authentication-made-simple-in-single-page-angularjs-applications.html
+[angular auth techniques]: https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec#.9s55lbg93
+[angular signup login]: http://jasonwatmore.com/post/2015/03/10/AngularJS-User-Registration-and-Login-Example.aspx
+[implementing auth]: http://www.sitepoint.com/implementing-authentication-angular-applications/

@@ -16,6 +16,12 @@
 * SPAs & Intro to AngularJS
 * Intro to Webpack
 
+## Resources
+* Complete: [a better way to learn angularjs] (first three parts: Introduction, Kicking the Tires, and Taking it for a Spin)
+* Skim: [angular developer guide]
+* Read: [introduction to webpack]
+* Complete: [getting started with webpack]
+
 ## Single Page Applications (SPAs)
   * **Overview**
     * single page applications (SPAs) are web applications that load a single HTML page who's surrounding content and functionality are often dynamically generated as the user interacts with the application
@@ -93,3 +99,8 @@
 
 
     ```
+
+[a better way to learn angularjs]: https://thinkster.io/a-better-way-to-learn-angularjs
+[angular developer guide]: https://docs.angularjs.org/guide
+[introduction to webpack]: https://webpack.github.io/docs/what-is-webpack.html
+[getting started with webpack]: https://webpack.github.io/docs/tutorials/getting-started/

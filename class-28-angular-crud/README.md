@@ -1,6 +1,12 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 28: Angular CRUD
 =====================================
 
+## Resources
+* Skim: [angular docs templates]
+* Skim: [angular docs expressions]
+* Skim: [angular docs interpolation]
+* Skim: [angular docs directives]
+
 ## CRUD Services
   * **Overview**
     * we'll be using angular services to create libraries that allow for RESTful CRUD operations against the `slugram` backend application
@@ -21,3 +27,9 @@
     * `image/gif`
     * `audio/mpeg`
     * `audio/basic`
+
+
+[angular docs templates]: https://docs.angularjs.org/guide/templates
+[angular docs expressions]: https://docs.angularjs.org/guide/expression
+[angular docs interpolation]: https://docs.angularjs.org/guide/interpolation
+[angular docs directives]: https://docs.angularjs.org/guide/directive
