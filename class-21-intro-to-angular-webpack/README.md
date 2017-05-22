@@ -1,6 +1,21 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 21: Introduction to Angular & Webpack
 =====================================
 
+## Daily Plan
+* DS Challenge
+
+* Review 2nd half of class (including data structures)
+  * Mondays: Introduction to Data Structure
+  * Tuesdays: Whiteboarding Logic (no code)
+  * Wednesdays: Scaffold Data Structure in code
+  * Thursdays: Whiteboarding (w/code)
+  * Fridays: Whiteboarding & Code Challenge
+* Review week 1 of Front-end!
+
+* Intro to Tree Data Structures
+* SPAs & Intro to AngularJS
+* Intro to Webpack
+
 ## Single Page Applications (SPAs)
   * **Overview**
     * single page applications (SPAs) are web applications that load a single HTML page who's surrounding content and functionality are often dynamically generated as the user interacts with the application
@@ -19,7 +34,7 @@
   * **Overview**
     * **Angular.js** is a JS based front-end web application framework
     * it is built on top of the idea that declarative programming should be used to create UIs and connect functional components
-      * imperative programming should be left to defining an application's buisness logic
+      * imperative programming should be left to defining an application's business logic
     * **Angular.js** has a few key design constructs that should be considered when constructing your application
       * decouple DOM manipulation from application logic
       * decouple the client side from the server side

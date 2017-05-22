@@ -2,6 +2,7 @@
 
 students/
 db/
+build/
 
 ### OSX ###
 .DS_Store
