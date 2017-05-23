@@ -6,6 +6,7 @@
 * Read: [controllers with or without sugar]
 * Skim: [angular docs scope]
 * Skim: [angular docs ngController]
+* Skim: [tree data structure wiki]
 * Optional: [understanding scope]
 
 ## Getting Started with Controllers
@@ -14,7 +15,7 @@
     * when a controller is attached to the **DOM**, using the `ng-controller` directive, Angular will instantiate a new controller object
       * this will create a new **child scope** that is made available as a parameter to a controller's constructor
     * **note:** controllers are used to setup and add behavior to the `$scope` object
-    * **note:** controllers should not be used for DOM maniuplation or formatting of input and output
+    * **note:** controllers should not be used for DOM manipulation or formatting of input and output
 
   * **`Controller as` Syntax**
     * the `Controller as` syntax can be used to allow the use of `this` instead of `$scope` within our controllers
@@ -43,9 +44,10 @@
       </ul>
     </nav>
     ```
-    
+
 [controller-as or scope]: http://codetunnel.io/angularjs-controller-as-or-scope/
 [controllers with or without sugar]: https://johnpapa.net/do-you-like-your-angular-controllers-with-or-without-sugar/
 [angular docs scope]: https://docs.angularjs.org/guide/scope
 [angular docs ngController]: https://docs.angularjs.org/api/ng/directive/ngController
 [understanding scope]: https://github.com/angular/angular.js/wiki/Understanding-Scopes
+[tree data structure wiki]: https://en.wikipedia.org/wiki/Tree_(data_structure)
