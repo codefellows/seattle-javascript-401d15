@@ -1,0 +1,58 @@
+// **** VARS **** //
+$brand-primary: #BADDAD;
+$brand-secondary: #AFAFAF;
+
+$padding: .5em;
+
+$font-size-primary: 1.025em;
+
+// **** MIXINS **** //
+@mixin bubble{
+  border-radius: .25em;
+  font-family: sans-serif;
+}
+
+@mixin drop{
+  @include bubble;
+  font-size: $font-size-primary;
+}
+
+// **** BASE STYLES **** //
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: $brand-primary;
+}
+
+input {
+  @include bubble;
+  width: 50%;
+  margin: 0;
+  padding: $padding;
+  &:hover {
+    color: $brand-secondary;
+  }
+}
+
+// Don't do this...
+// main {
+//   background-color: $brand-secondary;
+//   .container {
+//     section {
+//       p {
+//         span {
+//
+//         }
+//       }
+//     }
+//   }
+// }
+
+@for $i from 6 through 1 {
+  h#{$i} {
+    color: $brand-primary;
+    margin-bottom: $font-size-primary / 2;
+    font-size: 9/($i +2) * 1em;
+  }
+}

@@ -1,6 +1,13 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 22: Angular Controllers
 =====================================
 
+## Daily Plan
+* DS Challenge
+
+* Intro to SCSS
+* Review Angular Scope
+* Angular Controller As syntax
+
 ## Resources
 * Read: [controller-as or scope]
 * Read: [controllers with or without sugar]
