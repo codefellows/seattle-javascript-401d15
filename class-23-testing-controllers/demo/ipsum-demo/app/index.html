@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Hacker Ipsum </title>
+  </head>
+  <body>
+    <div class="ipsum-app" ng-app="ipsumApp">
+      <header>
+        <h1> Hacker Ipsum </h1>
+      </header>
+      <main 
+        ng-controller="IpsumController as ipsumCtrl">
+        <form ng-submit="ipsumCtrl.handleSubmit()">
+          <select ng-model="ipsumCtrl.selected">
+            <option 
+              ng-repeat="item in ipsumCtrl.choices track by $index"
+              value="{{item}}">
+              {{item}}
+            </option>
+                  
+          </select>
+          <button type="submit"> barf {{ipsumCtrl.selected}} ipsum </button>
+        </form>
+
+        {{ipsumCtrl.content}}
+      </main>
+    </div>
+  </body>
+</html>
