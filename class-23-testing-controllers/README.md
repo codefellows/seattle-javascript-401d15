@@ -9,7 +9,7 @@
 
 ## Testing Controllers
   * **Overview of Technologies**
-    * `Karma` is a test runner for running tests against code that would normally be ran in a browser enviornment
+    * `Karma` is a test runner for running tests against code that would normally be ran in a browser environment
     * `Jasmine` is a testing framework that uses BDD (behavior driven development) style naming conventions, similar to that of `mocha`
       * `Jasmine` also includes a built in assertion library that uses similar conventions to `chai`'s `expect` syntax and associated language chains
     * `angular-mocks` is a library that will be used to mock our angular code for testing
@@ -54,7 +54,7 @@
       });
     };
     ```
-    
+
 [testing controllers]: http://www.bradoncode.com/blog/2015/06/05/ngmock-fundamentals-testing-controllers/
 [end-2-end testing]: https://docs.angularjs.org/guide/e2e-testing
 [practical protractor]: http://www.ng-newsletter.com/posts/practical-protractor.html
