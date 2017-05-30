@@ -1,6 +1,16 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 26: Client Side Routing
 =====================================
 
+## Daily Plan
+* Notes:
+  * Concerns about learning Angular 1.x
+
+* Weekly Review - what's coming up
+* DS Challenge
+* Review HTML Parser
+* Binary Search Trees
+* Angular Routing
+
 ## Resources
 * Read: [http and server interactions]
 * Skim: [binary search tree wiki]
