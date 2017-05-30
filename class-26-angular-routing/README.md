@@ -3,6 +3,7 @@
 
 ## Resources
 * Read: [http and server interactions]
+* Skim: [binary search tree wiki]
 
 ## Client Side Routing
   * **Overview**
@@ -22,7 +23,8 @@
     * service providers are used to configure service's within a module
     * service providers can be injected into a module's config method
     * `$logProvider` is used to enable/disable `$log`'s logging
-    * `$httpProvider` is usd to configure default behaviors for `$http`
+    * `$httpProvider` is used to configure default behaviors for `$http`
 
 
 [http and server interactions]: https://thinkster.io/a-better-way-to-learn-angularjs#http-and-server-interaction
+[binary search tree wiki]: https://en.wikipedia.org/wiki/Binary_search_tree
