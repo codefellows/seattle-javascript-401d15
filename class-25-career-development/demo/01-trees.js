@@ -13,7 +13,7 @@ Tree.prototype.preOrder = function(cb) {
   _walk(this.root)
 
   function _walk(node) {
-    cb(node)
+    // cb(node)
     node.children.forEach(_walk)
   }
 }
