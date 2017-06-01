@@ -1,3 +1,4 @@
+
 'use strict'
 
 const dotenv = require('dotenv')
@@ -43,7 +44,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        exclude: [/node_modules/],
+        exclude: /node_modules/,
         use: 'babel-loader'
       },
       {
@@ -52,7 +53,7 @@ module.exports = {
       },
       {
         test: /\.(eot|ttf|woff|svg).*/,
-        use: 'url?limit=10000&name=image/[hash].[ext]'
+        use: 'file-loader'
       },
       {
         test: /\.scss$/,

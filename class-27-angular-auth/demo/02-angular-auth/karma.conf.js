@@ -1,21 +1,19 @@
 'use strict'
 
-const webpack = require('./webpack.config.js')
-delete webpack.entry
+const webpackConfig = require('./webpack.config.js')
+delete webpackConfig.entry
 
 module.exports = function(config) {
   config.set({
-    webpack,
-    basePath: './',
+    webpack: webpackConfig,
+    basePath: '',
     frameworks: ['jasmine'],
     files: [
-      // {pattern: 'test/*-test.js', watched: false},
-      {pattern: 'test/**/*-test.js', watched: false}
+      'test/**/*-test.js'
     ],
     exclude: [
     ],
     preprocessors: {
-      // 'test/*-test.js': ['webpack'],
       'test/**/*-test.js': ['webpack']
     },
     reporters: ['mocha'],

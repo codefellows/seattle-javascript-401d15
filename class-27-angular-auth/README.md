@@ -1,6 +1,14 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 27: Client Side Auth
 =====================================
 
+## Daily Plan
+* Notes:
+  * Front-end Testing
+* DS Challenge - create an immutable function that will merge two sorted arrays
+* Binary Search Tree - code demo
+* Angular Auth
+  * Review slugram backend
+
 ## Resources
 * Read: [auth made simple]
 * Read: [angular auth techniques]
