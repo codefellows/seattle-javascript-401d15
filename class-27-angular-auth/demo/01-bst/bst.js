@@ -27,7 +27,14 @@ bstNode.prototype.insert = function(val) {
 }
 
 bstNode.prototype.delete = function() {
-
+  // find the node you want
+  // check to see if there are no children
+    // defreference that node
+  // check to see if there is one child
+    // set that child as the successor to the node you're removing
+    // defreference that node
+  // check to see if there are two children
+    // nuke it with fire!! (reference the wiki pseudo code)
 }
 
 bstNode.prototype.contains = function(val) {
@@ -66,26 +73,28 @@ bstNode.prototype.breadthFirst = function() {
 }
 
 bstNode.prototype.preOrder = function(cb) {
-  if(!node) return
-  cb(node)
-  this.left.preOrder(node)
-  this.right.preOrder(node)
+  _walk(this)
+  function _walk(node) {
+    cb(node)
+    if(node.left) _walk(node.left)
+    if(node.right) _walk(node.right)
+  }
 }
 
 bstNode.prototype.postOrder = function(cb) {
-  if(!node) return
-  this.left.postOrder(cb)
-  this.right.postOrder(cb)
-  cb(node)
+  _walk(this)
+  function _walk(node) {
+    if(node.left) _walk(node.left)
+    if(node.right) _walk(node.right)
+    cb(node)
+  }
 }
 
 bstNode.prototype.inOrder = function(cb) {
   _walk(this)
-
   function _walk(node) {
-    if(!node) return
-    this.left.inOrder(node)
+    if(node.left) _walk(node.left)
     cb(node)
-    this.right.inOrder(node)
+    if(node.right) _walk(node.right)
   }
 }
