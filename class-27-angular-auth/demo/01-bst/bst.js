@@ -1,5 +1,7 @@
 'use strict'
 
+let Viz = require('viz.js')
+
 const bstNode = module.exports = function(val) {
   this.val = val // unique id of the node
   this.data = null // optional
@@ -97,4 +99,20 @@ bstNode.prototype.inOrder = function(cb) {
     cb(node)
     if(node.right) _walk(node.right)
   }
+}
+
+bstNode.prototype.getDotInfo = function() {
+  let result = `digraph { `
+
+  this.preOrder(node => {
+    if(!node) return
+    if(node.left) result += `${node.val} -> ${node.left.val} `
+    if(node.right) result += `${node.val} -> ${node.right.val} `
+  })
+
+  return `${result};}`
+}
+
+bstNode.prototype.treeify = function() {
+  return Viz(this.getDotInfo())
 }
