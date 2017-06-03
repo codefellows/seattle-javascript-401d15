@@ -34,14 +34,14 @@
     * running your tests
 
 #### Feature Tasks  
-* implement a `BSTNode` constructor
+* implement a `BSTNode` constructor, including all of the methods we've covered in lecture
 * implement the following static methods
   * `BSTNode.fromArray()` should create BST from items in an array
+    * Ensure that your bst is validating unique values, and disallowing duplicates
 * implement the following prototype methods
-  * `node.appendChild(node)` should append a child to the bst
-  * `node.min()` should return the min value in a bst
-  * `node.max()` should return the min value in a bst
-  * `node.find()` should return the node that contains the value, null otherwise
+  * `node.min()` should return the min value in the bst
+  * `node.max()` should return the min value in the bst
+  * `node.maxDepth()` should return the total depth in the bst
 
 ## Bonus Points:
   * 2pts
