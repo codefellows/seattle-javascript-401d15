@@ -1,0 +1,29 @@
+<form
+  ng-submit="authSignupFormCtrl.handleSubmit()"
+  class="auth-signup-form"
+  novalidate>
+
+  <input 
+    name="username"
+    type="text"
+    ng-model="authSignupFormCtrl.user.username"
+    placeholder="username"
+    />
+
+  <input 
+    name="email"
+    type="email"
+    ng-model="authSignupFormCtrl.user.email"
+    placeholder="email"
+    />
+
+  <input 
+    name="password"
+    type="password"
+    ng-model="authSignupFormCtrl.user.password"
+    placeholder="password"
+    />
+  
+  <button type="submit"> Sign up </button>
+
+</form>
