@@ -1,20 +1,26 @@
 'use strict'
 
-require('./lib/test-setup.js')
+// require('./lib/test-setup')
+const expect = require('chai').expect
 
 describe('Signup Controller', function () {
-  beforeEach(() => {
+  beforeEach(done => {
     angular.mock.module('routesApp')
-    angular.mock.inject(($rootScope, $controller) => {
+    angular.mock.inject(($controller) => {
       this.signupCtrl = new $controller('SignupController')
-      this.$rootScope = $rootScope
+      done()
     })
   })
 
+  beforeEach(done => {
+    this.signupCtrl.$onInit()
+    done()
+  })
+
   describe('Default Properties', () => {
-    it('title is set correctly', () => {
-      expect(this.signupCtrl.title).toBe('Welcome to the Signup Page')
+    it('title is set correctly', done => {
+      expect(this.signupCtrl.title).to.equal('Welcome to the Signup Page')
+      done()
     })
-    this.$rootScope.apply()
   })
 })

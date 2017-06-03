@@ -2,9 +2,9 @@
 
 module.exports = [
   '$stateProvider',
-  '$urlRouterProvider',
-  function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.when('', '/home')
+  '$urlServiceProvider',
+  function($stateProvider, $urlServiceProvider) {
+    $urlServiceProvider.rules.when('', '/home')
     let routes = [
       {
         name: 'home',

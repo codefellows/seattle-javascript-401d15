@@ -1,22 +1,29 @@
 
 'use strict'
 
-require('./lib/test-setup.js')
+require('./lib/test-setup')
+const expect = require('chai').expect
 
 describe('Home Controller', function () {
 
-  beforeEach(() => {
+  beforeEach(done => {
     angular.mock.module('routesApp')
-    angular.mock.inject(($rootScope, $controller) => {
+    angular.mock.inject(($controller) => {
       this.homeCtrl = new $controller('HomeController')
-      this.$rootScope = $rootScope
+      done()
     })
   })
 
+  beforeEach(done => {
+    this.homeCtrl.$onInit()
+    done()
+  })
+
   describe('Default Properties', () => {
-    it('title is set correctly', () => {
-      expect(this.homeCtrl.title).toBe('Welcome to the homepage')
-      this.$rootScope.apply()
+    it('title is set correctly', done => {
+      console.log(this.homeCtrl);
+      expect(this.homeCtrl.title).to.equal('Welcome to the homepage')
+      done()
     })
   })
 })

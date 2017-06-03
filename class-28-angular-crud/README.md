@@ -2,10 +2,9 @@
 =====================================
 
 ## Resources
-* Skim: [angular docs templates]
-* Skim: [angular docs expressions]
-* Skim: [angular docs interpolation]
-* Skim: [angular docs directives]
+* Review: [angular $http]
+* Review: [angular mock $httpBackend]
+* Skim: [hash table wiki]
 
 ## CRUD Services
   * **Overview**
@@ -29,7 +28,6 @@
     * `audio/basic`
 
 
-[angular docs templates]: https://docs.angularjs.org/guide/templates
-[angular docs expressions]: https://docs.angularjs.org/guide/expression
-[angular docs interpolation]: https://docs.angularjs.org/guide/interpolation
-[angular docs directives]: https://docs.angularjs.org/guide/directive
+[angular $http]: https://docs.angularjs.org/api/ng/service/$http
+[angular mock $httpBackend]: https://docs.angularjs.org/api/ngMock/service/$httpBackend
+[hash table wiki]: https://en.wikipedia.org/wiki/Hash_table
