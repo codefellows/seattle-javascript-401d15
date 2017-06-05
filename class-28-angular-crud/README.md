@@ -1,6 +1,13 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 28: Angular CRUD
 =====================================
 
+## Daily Plan
+* Weekly Review
+* Hash Tables
+* Angular Review
+* Ng-Testing w/mocks
+* Ng-CRUD (Create a Gallery)
+
 ## Resources
 * Review: [angular $http]
 * Review: [angular mock $httpBackend]

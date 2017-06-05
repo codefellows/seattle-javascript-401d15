@@ -15,18 +15,17 @@ describe('Auth Service', function() {
   })
 
   describe('authService.getToken', () => {
-    it('should return a token', done => {
+    it('shoul return a token', done => {
       this.authService.token = null
       this.$window.localStorage.setItem('token', 'test token')
 
       this.authService.getToken()
       .then(token => {
-        expect(token).to.equal('test token')
+        expect(token).to.equal(this.$window.localStorage.token)
       })
       .catch(err => {
         expect(err).to.equal(null)
       })
-      this.$rootScope.$apply()
       done()
     })
   })
