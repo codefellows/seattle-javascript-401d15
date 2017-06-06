@@ -5,10 +5,20 @@
 module.exports = [
   '$log',
   '$rootScope',
+  '$window',
+  '$location',
+  'authService',
   'galleryService',
-  function($log, $rootScope, galleryService) {
+  function($log, $rootScope, $window, $location, authService, galleryService) {
   this.$onInit = () => {
     $log.debug('HomeController()')
+    if(!$window.localStorage.token) {
+      authService.getToken()
+      .then(
+        () => $location.url('/home'),
+        () => $location.url('/signup')
+      )
+    }
     this.galleries = []
 
     this.fetchGalleries = () => {
