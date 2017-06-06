@@ -1,6 +1,14 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 29: Component Bindings
 =====================================
 
+## Daily Plan
+* Notes: Final Whiteboard Assignment/Schedule Posted
+  * Review Binary Trees
+
+* Code Review lab 28
+* Karma Test Watcher / Debugger
+* Component Bindings [code demo]
+
 ## Resources
 * Read: [Angular Components]
   * Specifically the section titled: `Component-based application architecture`
