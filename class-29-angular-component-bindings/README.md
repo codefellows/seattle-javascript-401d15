@@ -1,6 +1,10 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 29: Component Bindings
 =====================================
 
+## Resources
+* Read: [Angular Components]
+  * Specifically the section titled: `Component-based application architecture`
+
 ## Component Bindings
   * **Overview**
     * component bindings allow us to pass state into a component at initialization
@@ -66,3 +70,6 @@
     </image-item>
   </ul>
   ```
+
+
+[Angular Components]: https://docs.angularjs.org/guide/component
