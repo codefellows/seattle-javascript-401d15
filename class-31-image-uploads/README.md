@@ -1,6 +1,14 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 31: Image Uploads
 =====================================
 
+## Daily Plan
+* Notes:
+  *
+* Hash Table [code demo]
+* ng-animate (animations!)
+  * ng-touch (mobile touch support / functionality)
+* Uploading images using ng-file-upload [code demo]
+
 ## Image Uploads
   * **Overview**
     * unlike most of our previous requests, file uploads require a `Content-Type` of `multipart/form-data`

@@ -1,0 +1,21 @@
+{
+  "name": "01-hash-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "faker": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
