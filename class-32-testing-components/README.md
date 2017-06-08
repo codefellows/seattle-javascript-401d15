@@ -1,6 +1,18 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 32: Testing Components
 =====================================
 
+## Daily Plan
+* Notes: Project Teams!
+* TESTS!!
+* TDD-ish the delete pic functionality
+
+## Project Groups (5 groups of 5)
+1. Abbi, Allie, Steven J, David Wheeler, Shelly
+2. Glen, Enrique , Lindsey, Brianna, Cameron
+3. Isak, Kaylee, Chris, Disa, Kayla
+4. James, Carlo, Patrick, Maria, Mike T
+5. Caleb, Mike P, Ben, Teddy, Scott
+
 ## Resources
 * Read: [singletons]
 * Read: [factories]
@@ -18,5 +30,5 @@
       * make the request
       * flush the server
 
-[singletons]: http://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript 
+[singletons]: http://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript
 [factories]: http://addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript

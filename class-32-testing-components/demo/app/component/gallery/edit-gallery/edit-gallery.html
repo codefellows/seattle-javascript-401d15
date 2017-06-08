@@ -1,0 +1,17 @@
+<section>
+  <form
+    name="editGalleryForm"
+    ng-submit="editGalleryCtrl.updateGallery()"
+    novalidate>
+    <fieldset>
+      <label for="name">name</label>
+      <input name="name" type="text" ng-model="editGalleryCtrl.gallery.name">
+    </fieldset>
+    <fieldset>
+      <label for="description">desc</label>
+      <input name="description" type="text" ng-model="editGalleryCtrl.gallery.desc">
+    </fieldset>
+
+    <button type="submit" name="submit update">update</button>
+  </form>
+</section>
