@@ -1,5 +1,7 @@
 'use strict'
 
+require('./_gallery-item.scss')
+
 module.exports = {
   template: require('./gallery-item.html'),
   controllerAs: 'galleryItemCtrl',

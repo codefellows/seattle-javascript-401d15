@@ -5,23 +5,31 @@ const expect = require('chai').expect
 describe('Home Controller', function() {
   beforeEach(done => {
     angular.mock.module('cfgram')
-    angular.mock.inject(($rootScope, $window, $httpBackend, $controller, galleryService) => {
+    angular.mock.inject(($rootScope, $state, $location, $window, $httpBackend, $controller, galleryService) => {
       this.$rootScope = $rootScope
+      this.$state = $state
+      this.$location = $location
       this.$window = $window
       this.$httpBackend = $httpBackend
       this.$controller = $controller
       this.galleryService = galleryService
 
-      this.scope = this.$rootScope.$new()
+      // this.scope = this.$rootScope.$new()
+      this.$location.url('/home')
       this.$window.localStorage.token = 'test token'
+      this.galleryService.galleries = [
+        {name: 'one', desc: 'one', _id: '1234'},
+        {name: 'two', desc: 'two', _id: '5678'}
+      ]
+
       this.homeCtrl = this.$controller(
         'HomeController',
         {
-          scope: this.scope,
+          scope: this.$rootScope,
           galleryService: this.galleryService
         }
       )
-      this.homeCtrl.$onInit()
+
       done()
     })
   })
@@ -30,17 +38,6 @@ describe('Home Controller', function() {
     delete this.homeCtrl
     delete this.$window.localStorage.token
     done()
-  })
-
-  describe('Default properties', () => {
-    it('should have a galleries array', done => {
-      expect(this.homeCtrl.galleries).to.be.instanceOf(Array)
-      done()
-    })
-    it('should have a #fetchGalleries method', done => {
-      expect(this.homeCtrl.fetchGalleries).to.be.instanceOf(Function)
-      done()
-    })
   })
 
   describe('Functional methods', () => {
@@ -59,7 +56,6 @@ describe('Home Controller', function() {
       })
       afterEach(done => {
         this.$httpBackend.flush()
-        this.$rootScope.$apply()
         done()
       })
 
@@ -67,17 +63,36 @@ describe('Home Controller', function() {
         this.$httpBackend.expectGET(this.expectUrl, this.expectHeaders)
           .respond(200, this.expectGalleries)
 
-        // this.homeCtrl.fetchGalleries()
+        this.homeCtrl.$onInit()
+        this.$rootScope.$apply()
+
         done()
       })
       it('should return an array of galleries', done => {
         this.$httpBackend.whenGET(this.expectUrl, this.expectHeaders)
           .respond(200, this.expectGalleries)
 
-        // this.homeCtrl.fetchGalleries()
-        // NOTE Scott will follow up on this one...
+        this.homeCtrl.$onInit()
+        this.$rootScope.$apply()
+
         done()
       })
+    })
+  })
+
+  describe('Default properties', () => {
+    beforeEach(done => {
+      this.homeCtrl.$onInit()
+      done()
+    })
+
+    it('should have a galleries array', done => {
+      expect(this.homeCtrl.galleries).to.be.instanceOf(Array)
+      done()
+    })
+    it('should have a #fetchGalleries method', done => {
+      expect(this.homeCtrl.fetchGalleries).to.be.instanceOf(Function)
+      done()
     })
   })
 })

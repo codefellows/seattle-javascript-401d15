@@ -5,6 +5,29 @@ const HashTable = module.exports = function(size=8192) {
   this.buckets = [...Array(this.size)]
 }
 
+// buckets: [
+//   DBL{
+//     this.head: Node{
+//       this.next: Node{},
+//       this.prev: null
+//     },
+//     this.tail: Node{
+//       this.next: null,
+//       this.prev: Node{}
+//     }
+//   },
+//   DBL{
+//     this.head: Node{
+//       this.next: Node{},
+//       this.prev: null
+//     },
+//     this.tail: Node{
+//       this.next: null,
+//       this.prev: Node{}
+//     }
+//   }
+// ]
+
 HashTable.prototype.hashKey = function(key) {
   if(!key) throw new Error('key required for hash to function... derp')
   let hash = key.split('').reduce((acc, curr) => acc + curr.charCodeAt(0), 0) % this.size

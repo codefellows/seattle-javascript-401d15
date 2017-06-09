@@ -1,6 +1,24 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) lab 35 - Hash Table Data Structure
 ====
 
+## Daily Plan
+* Notes: Project week classroom space (1/2 day at most in a classroom)
+* Hash Table Review
+* Whiteboarding
+
+
+## Whiteboarding
+* Questions:
+  * Explain how you would design a chat server. In particular, provide details about the various backend components and methods. What would be the hardest problems to solve?
+  Explain the data structures and algorithms you would use to design an in-memory file system. Illustrate with an example in code where possible.
+  * Implement Breadth First Traversal of a tree
+  * Write a method to decide if two strings are anagrams
+  * Given an infinite number of quarters (25 cents), dimes (10 cents), nickels (5 cents), and pennies (1 cent), write code to calculate the number of ways of representing n cents
+  * How would you test a pen? (yes, one that writes on paper)
+  * Write a step by step execution of things that happen after a user presses a key on the keyboard. Use as much detail as possible.
+  * Write a function that finds the first duplicate letter in a string (using a hash table)
+  * Write a function that will return the max depth of a binary tree
+
 ## To Submit this Assignment
   * fork this repository
   * write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
