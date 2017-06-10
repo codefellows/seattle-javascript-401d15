@@ -17,11 +17,13 @@ const DLL = module.exports = function() {
 // (prepend)                (append)
 
 DLL.prototype.append = function(val) {
-  if(!val) throw new Error('must provide value')
+  if(!val) throw new Error('Please provide a value')
   if(!this.head) return this.head = this.tail = new Node(val)
 
   this.head.next = new Node(val)
+  this.head.next.prev = this.head
   this.head = this.head.next
+  this.length++
   return this.head
 }
 
@@ -30,7 +32,9 @@ DLL.prototype.prepend = function(val) {
   if(!this.tail) return this.tail = this.head = new Node(val)
 
   this.tail.prev = new Node(val)
+  this.tail.prev.next = this.tail
   this.tail = this.tail.prev
+  this.length++
   return this.tail
 }
 
