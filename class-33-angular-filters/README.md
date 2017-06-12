@@ -1,6 +1,12 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) 33: Angular Filters & Directives
 =====================================
 
+## Daily Plan
+* Notes: Anything top of mind?
+* Angular Filters
+* Custom Filters
+
+
 ## Resources
 * Skim: [angular docs filter]
 
