@@ -8,9 +8,9 @@
 
 ## Project Groups (5 groups of 5)
 1. Abbi, Allie, Steven J, David Wheeler, Shelly
-2. Glen, Enrique , Lindsey, Brianna, Cameron
-3. Isak, Kaylee, Chris, Disa, Kayla
-4. James, Carlo, Patrick, Maria, Mike T
+2. Glen, Enrique, Lindsey, Brianna, Cameron
+3. Isak, Kaylee, Chris, Kayla, Disa (?)
+4. James, Carlo, Patrick, Maria, Mike T (?)
 5. Caleb, Mike P, Ben, Teddy, Scott
 
 ## Resources

@@ -1,0 +1,31 @@
+<li class="gallery-item">
+  <h1>{{ galleryItemCtrl.gallery.name | customUppercase }}</h1>
+  <h2>created {{ galleryItemCtrl.daysSince | date : "d" }} days ago</h2>
+  <h2>created: {{ galleryItemCtrl.gallery.created | date }}</h2>
+  <h3>buy this gallery for: {{ galleryItemCtrl.cost | currency : $ : 0}}</h3>
+
+
+  <div class="current-item" ng-if="!galleryItemCtrl.showEditGallery">
+    <div>
+      <span class="item-label">name:</span>
+      <span>{{ galleryItemCtrl.gallery.name }}</span>
+    </div>
+
+    <div>
+      <span class="item-label">description:</span>
+      <span>{{ galleryItemCtrl.gallery.desc }}</span>
+    </div>
+  </div>
+
+  <edit-gallery ng-if="galleryItemCtrl.showEditGallery" gallery="galleryItemCtrl.gallery"></edit-gallery>
+
+</li>
+<li class="edit-btns">
+  <span
+    ng-click="galleryItemCtrl.showEditGallery=!galleryItemCtrl.showEditGallery">
+    <img src="https://cdn1.iconfinder.com/data/icons/basic-line-6/1024/edit-256.png" alt="edit">
+  </span>
+  <span ng-click="galleryItemCtrl.deleteGallery()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Remove_font_awesome.svg/512px-Remove_font_awesome.svg.png" alt="delete">
+  </span>
+</li>
